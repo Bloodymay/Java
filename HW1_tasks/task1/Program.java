@@ -10,6 +10,7 @@ public class Program {
         Scanner iScanner = new Scanner(System.in);
         System.out.printf("Введите число N: ");
         int n = iScanner.nextInt();
+        iScanner.close();
         int i = 1;
         int res = 0;
 
