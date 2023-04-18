@@ -2,10 +2,12 @@
 
 package HW1_tasks.task3;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
+        try{
         Scanner iScanner = new Scanner(System.in);
         System.out.print("Введите первое число: ");
         int a = iScanner.nextInt();
@@ -40,9 +42,15 @@ public class Program {
                 result = Math.pow(a, b);
                 System.out.println(result);
                 break;
+            }
+        }
+        catch(InputMismatchException e){
+            System.out.println("Неверный оператор/число. Повторите ввод");
+
+        }
 
         }
 
     }
 
-}
+
