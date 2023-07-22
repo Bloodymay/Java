@@ -22,6 +22,7 @@ public class Program {
             case '/':
                 try {
                     result = a / b;
+                    System.out.println(result);
                 } catch (ArithmeticException e) {
                     System.out.println("Делить на ноль нельзя!");
                 }
